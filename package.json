@@ -9,8 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "next": "14.2.4",
     "papaparse": "^5.4.1",
+=======
+    "install": "^0.13.0",
+    "next": "14.2.4",
+>>>>>>> 6f809f190eced61f88885ae3980bb1a87bbb7446
     "react": "^18",
     "react-dom": "^18"
   },
