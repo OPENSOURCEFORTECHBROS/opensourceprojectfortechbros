@@ -1,0 +1,29 @@
+.parent {
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.article_parent {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  border: 1px solid silver;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.article_image {
+  width: 100%;
+  height: 125px;
+  min-width: 125px;
+  max-width: 125px;
+  border-radius: 10px;
+  margin-right: 15px;
+  background-size: cover;
+  background-color: silver;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("https://munyathedev.co.za/public-api/opensourceprojectfortechbros/image/pp-1.png");
+}

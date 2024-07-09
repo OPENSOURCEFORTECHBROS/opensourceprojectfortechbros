@@ -1,0 +1,37 @@
+.introductionSection {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(45deg, red, blue, #ff5500, green);
+  background-size: 800% 800%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.header_1 {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

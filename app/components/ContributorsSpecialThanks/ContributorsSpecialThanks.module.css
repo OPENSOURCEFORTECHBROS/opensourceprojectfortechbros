@@ -1,0 +1,83 @@
+.parent {
+  width: 100%;
+  display: flex;
+  padding: 50px 0px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(45deg, red, blue, #ff5500, green);
+  background-size: 800% 800%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.header_1 {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contributors_parent {
+  width: 100%;
+  display: flex;
+  min-width: 100vw;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+.contributor_parent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 10px 10px 10px;
+}
+
+.contributors_image {
+  width: 100%;
+  height: 75px;
+  min-width: 75px;
+  max-width: 75px;
+  margin-bottom: 5px;
+  border-radius: 50px;
+  background-size: cover;
+  background-color: silver;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("https://munyathedev.co.za/public-api/opensourceprojectfortechbros/image/pp-1.png");
+}
+
+.contributors_name {
+  font-size: 14px;
+  margin-bottom: 2px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contributors_link {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

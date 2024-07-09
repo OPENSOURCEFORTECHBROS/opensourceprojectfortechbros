@@ -1,0 +1,82 @@
+.parent {
+  width: 100%;
+  padding: 0px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid silver;
+  overflow: hidden;
+}
+
+.headingParent {
+  color: white;
+  padding-left: 10px;
+  margin: 0px;
+}
+
+.description_text {
+  color: white;
+  font-size: 12px;
+  font-style: italic;
+  padding-left: 10px;
+  margin-bottom: 0px;
+}
+
+.standard_ul {
+  margin: 0px;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.standard_li:hover {
+  background-color: #ededed;
+}
+
+.standard_li {
+  border-top: 1px solid silver;
+}
+
+.standard_li_header {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.standard_li a {
+  margin: 0;
+  color: black;
+  display: block;
+  font-size: 14px;
+  padding: 10px 10px;
+  font-weight: bold;
+  font-size: 14px !important;
+  text-decoration: none !important;
+}
+
+/* 
+MEDIA DEVICES TEMPLATE
+*/
+/* Small Devices (Landscape Phones) */
+@media (max-width: 767.98px) {
+  .parent {
+    width: 250px;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 991.98px) {
+  .hide_on_desktop {
+    display: block;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1200px) {
+  /* Your styles for large desktops */
+}
