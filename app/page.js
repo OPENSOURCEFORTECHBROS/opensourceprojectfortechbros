@@ -1,95 +1,37 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+// pages/index.js
+import Head from 'next/head';
+import Header from './components/navbar';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+      <div>
+          <Head>
+              <title>SA TECH COMMUNITY</title>
+          </Head>
+          <Header />
+          <main>
+              <div style={{ textAlign: 'center', padding: '20px', paddingTop: '120px' }}>
+                  <h1>Welcome to SA TECH COMMUNITY</h1>
+                  <div style={{ marginTop: '20px', padding: '20px', border: '1px solid #333', borderRadius: '10px', backgroundColor: '#f7f7f7' }}>
+                      <h2>Official Website of SA TECH BROS</h2>
+                      <p>OPENSOURCE Project</p>
+                      <a href="https://github.com/OPENSOURCEFORTECHBROS/opensourceprojectfortechbros" target="_blank" rel="noopener noreferrer" style={{ color: '#000', textDecoration: 'none', fontWeight: 'bold' }}>Link to Project Github</a>
+                  </div>
+                  <div style={{ marginTop: '20px', padding: '20px', border: '1px solid #333', borderRadius: '10px', backgroundColor: '#f7f7f7' }}>
+                      <p>Your effort is much appreciated. It's not going unnoticed. 😄</p>
+                      <p>Let's build this community together. 👨‍💻🖤</p>
+                  </div>
+                  <div style={{ marginTop: '20px', padding: '20px', border: '1px solid #333', borderRadius: '10px', backgroundColor: '#f7f7f7' }}>
+                      <h2>THIS IS WHERE WE CODE 🖥 😎</h2>
+                      <p>Hi everyone! 👋😁 This community is for experienced devs and engineers to help each other solve complex software issues and further advance knowledge. 🦾🤳💻⌨️🖥</p>
+                  </div>
+                  <div style={{ marginTop: '20px', padding: '20px', border: '1px solid #333', borderRadius: '10px', backgroundColor: '#f7f7f7' }}>
+                      <h2>FEEL FREE TO MARKET YOUR TECH PRODUCTS AND PROJECTS</h2>
+                      <p>To Join the WhatsApp click</p>
+                      <a href="https://chat.whatsapp.com/H1OZvvvaPOz82xW2V9K0O8" target="_blank" rel="noopener noreferrer" style={{ color: '#000', textDecoration: 'none', fontWeight: 'bold' }}>This link to WhatsApp community</a>
+                  </div>
+              </div>
+          </main>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
   );
 }

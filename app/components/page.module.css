@@ -1,0 +1,99 @@
+/* components/Header.module.css */
+.header {
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  position: fixed;
+  right: 0%;
+  left: 0%;
+  top: 0%;;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+.navLink:hover {
+  background-color: #151515;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #030303;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
+.dropdownItem {
+  padding: 0.5rem 1rem;
+  z-index: 50;
+}
+
+.dropdownItem a {
+  color: white;
+  text-decoration: none;
+}
+
+.navItem:hover .dropdown {
+  display: block;
+  z-index: 50;
+}
+
+.mobileMenuButton {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #000000;
+      position: absolute;
+      top: 60px; /* Adjust as needed to place below the navbar */
+      left: 0;
+      right: 0; /* Add this to make the menu take the full width */
+      padding: 0;
+      margin: 0; /* Add this to remove any margin */
+  }
+
+  .navLinks.navLinksMobile {
+      display: flex;
+  }
+
+  .mobileMenuButton {
+      display: block;
+  }
+}
