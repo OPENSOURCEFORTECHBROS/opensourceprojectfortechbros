@@ -4,8 +4,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "SA TECH👨‍💻",
-  description: "BUILT BY OWLS🦉",
+  title: "TECHTONIX",
+  description: "BUILT BY TECH BROS🦉",
 };
 
 export default function RootLayout({ children }) {

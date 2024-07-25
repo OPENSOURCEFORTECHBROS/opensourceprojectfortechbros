@@ -8,3 +8,21 @@
   
 }
 
+/* styles/globals.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #1f2937; /* Ensure the background color is consistent */
+  color: #ffffff;
+  height: 100%;
+}
+
+#__next {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
