@@ -1,5 +1,5 @@
 "use client"
-import Header from './components/navbar';
+import Header from '../components/navbar';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp, faThumbsDown, faLaugh, faGem, faEllipsisH, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
@@ -17,8 +17,8 @@ export default function Feed() {
     <div>
       <Header />
       <div style={{ minHeight: '100vh', backgroundColor: '#1f2937', color: '#ffffff', padding: '1rem' }}>
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem', marginTop: '4rem'  }}>
-          <div style={{ position: 'relative', width: '100%', maxWidth: '600px', zIndex: '10'}}>
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem', marginTop: '5rem'  }}>
+          <div style={{ position: 'relative', width: '100%', maxWidth: '600px', zindex:'10'}}>
             <input 
               type="text" 
               placeholder="Search..." 

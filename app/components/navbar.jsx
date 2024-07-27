@@ -19,8 +19,11 @@ const Header = () => {
           <Image src="/images/LOGO.png" alt="Techtonix Logo" width={50} height={50} />
         </div>
         <ul className={`${styles.navLinks} ${isMobileMenuOpen ? styles.navLinksMobile : ''}`}>
-          <li className={styles.navItem}>
+          <li className={styles.home}>
             <a href="/" className={styles.navLink}>Home</a>
+          </li>
+          <li className={styles.navItem}>
+            <a href="/feed" className={styles.navLink}>Feed</a>
           </li>
           <li className={styles.navItem}>
             <a href="#" className={styles.navLink}>About</a>
@@ -29,6 +32,7 @@ const Header = () => {
               <li className={styles.dropdownItem}><a href="/about/timeline">Timeline</a></li>
             </ul>
           </li>
+          
           <li className={styles.navItem}>
             <a href="#" className={styles.navLink}>App Test</a>
             <ul className={styles.dropdown}>
@@ -38,6 +42,9 @@ const Header = () => {
           </li>
           <li className={styles.navItem}>
             <a href="/contributors" className={styles.navLink}>Contributors</a>
+          </li>
+          <li className={styles.navItem}>
+            <a href="/login" className={styles.navLink}>Login</a>
           </li>
         </ul>
         <div className={styles.mobileMenuButton} onClick={handleMobileMenuToggle}>
