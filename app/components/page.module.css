@@ -38,6 +38,15 @@
 
 }
 
+@media (min-width: 768px) {
+  .home {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-top: 0; /* Adjust as needed */
+  }
+}
+
 .navItem {
   position: relative;
 }
