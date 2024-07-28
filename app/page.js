@@ -14,7 +14,7 @@ export default function HomePage() {
       
       <section style={{ textAlign: 'center', marginBottom: '4rem' }}>
       <div className='' style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1rem', marginTop: '2rem', flexDirection: 'column' }}>
-    <Image src="/images/green.png" alt="Techtonix mascot" width={250} height={250} />
+    <Image src="/images/green.svg" alt="Techtonix mascot" width={250} height={250} />
     <h1 style={{
       fontSize: '3rem', // Twice as big as the original 3rem
       background: 'linear-gradient(to bottom, #B0E0E6, #50C878)', // Powder blue to emerald green
