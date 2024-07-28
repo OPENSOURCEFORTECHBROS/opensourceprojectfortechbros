@@ -17,6 +17,7 @@ const Header = () => {
       <nav className={styles.navbar}>
         <div className={styles.logo}>
           <Image src="/images/LOGO.png" alt="Techtonix Logo" width={50} height={50} />
+          <h1 className={styles.word}>TECHTONIX</h1>
         </div>
         <ul className={`${styles.navLinks} ${isMobileMenuOpen ? styles.navLinksMobile : ''}`}>
           <li className={styles.home}>
